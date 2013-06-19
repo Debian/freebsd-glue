@@ -1,8 +1,8 @@
-freebsd-glue (0.0.5) UNRELEASED; urgency=low
+freebsd-glue (0.0.5) unstable; urgency=low
 
   * Drag libbsd counterparts into <stdio.h> and <stdlib.h>.
 
- -- Robert Millan <rmh@debian.org>  Wed, 19 Jun 2013 14:20:37 +0200
+ -- Robert Millan <rmh@debian.org>  Wed, 19 Jun 2013 21:05:20 +0200
 
 freebsd-glue (0.0.4) unstable; urgency=high
 
