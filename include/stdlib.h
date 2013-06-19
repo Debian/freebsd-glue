@@ -3,8 +3,6 @@
 #ifndef _STDLIB_H_
 #define _STDLIB_H_
 
-__BEGIN_DECLS
-const char *getprogname(void);
-__END_DECLS
+#include <bsd/stdlib.h>
 
 #endif
