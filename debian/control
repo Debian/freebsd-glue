@@ -16,6 +16,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  make,
  libbsd-dev (>= 0.4.0-1~),
  libexpat-dev,
+ byacc,
 Recommends:
 # Can't put this in Depends because it would introduce a circular dependency
 # (see #674806).
