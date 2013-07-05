@@ -1,10 +1,10 @@
-freebsd-glue (0.0.6) UNRELEASED; urgency=low
+freebsd-glue (0.0.6) unstable; urgency=low
 
   * Misc additions to simplify PPP patchset in freebsd-utils.
   * Add yacc -> byacc symlink.
   * Add _SAFE macros in <sys/queue.h>.
 
- -- Robert Millan <rmh@debian.org>  Fri, 28 Jun 2013 16:45:20 +0200
+ -- Robert Millan <rmh@debian.org>  Fri, 05 Jul 2013 22:02:54 +0200
 
 freebsd-glue (0.0.5) unstable; urgency=low
 
