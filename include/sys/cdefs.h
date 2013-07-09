@@ -40,7 +40,9 @@
 
 #define	__dead2		__attribute__((__noreturn__))
 #define	__pure2		__attribute__((__const__))
+#ifndef __DO_NOT_DEFINE_UNUSED	/* See <netdb.h> et al */
 #define	__unused	__attribute__((__unused__))
+#endif
 #define	__used		__attribute__((__used__))
 #define	__packed	__attribute__((__packed__))
 #define	__aligned(x)	__attribute__((__aligned__(x)))
@@ -49,6 +51,9 @@
 #define __offsetof(type, field)	__builtin_offsetof(type, field)
 #define __printflike(fmtarg, firstvararg) \
 	__attribute__((__format__ (__printf__, fmtarg, firstvararg)))
+
+/* Requires freebsd-gcc extensions */
+#define __printf0like(fmtarg, firstvararg)
 
 #define __FBSDID(s)		struct __hack
 #define __RCSID(s)		struct __hack

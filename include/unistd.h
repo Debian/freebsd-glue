@@ -159,7 +159,13 @@ execvP(const char *name, const char *path, char * const argv[])
 	return execvp(name, argv);
 }
 
+mode_t getmode(const void *, mode_t);
+void *setmode(const char *);
+int nlm_syscall(int, int, int, char **);
+
 #endif /* __FreeBSD_kernel__ */
+
+void setproctitle(const char *fmt, ...);
 
 __END_DECLS
 

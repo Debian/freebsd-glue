@@ -1,5 +1,11 @@
 #include_next <sys/param.h>
 
+#ifdef __FreeBSD_kernel__
+
+#include <sys/kern/param.h>
+
+#else
+
 #ifndef _SYS_PARAM_H_
 #define _SYS_PARAM_H_
 
@@ -11,5 +17,7 @@
 
 /* FreeBSD code expects that this file includes... */
 #include <sys/types.h>
+
+#endif
 
 #endif
