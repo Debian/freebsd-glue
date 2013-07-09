@@ -3,6 +3,8 @@
 #ifndef _UNISTD_H_
 #define	_UNISTD_H_
 
+#include <grp.h>	/* initgroups */
+
 #ifdef __FreeBSD_kernel__
 #include <sys/syscall.h>
 #include <stdlib.h>		/* setenv */
