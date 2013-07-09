@@ -1,10 +1,10 @@
-freebsd-glue (0.0.7) UNRELEASED; urgency=low
+freebsd-glue (0.0.7) unstable; urgency=low
 
   * Replace versions of freebsd-buildutils which included their own
     yacc. (Closes: #715138)
   * Misc fixes to accomodate for FreeBSD 9.1.
 
- -- Robert Millan <rmh@debian.org>  Tue, 09 Jul 2013 22:30:28 +0200
+ -- Robert Millan <rmh@debian.org>  Tue, 09 Jul 2013 22:32:45 +0200
 
 freebsd-glue (0.0.6) unstable; urgency=low
 
