@@ -52,6 +52,11 @@
 #define __printflike(fmtarg, firstvararg) \
 	__attribute__((__format__ (__printf__, fmtarg, firstvararg)))
 
+#define	__containerof(x, s, m) ({					\
+	const volatile __typeof(((s *)0)->m) *__x = (x);		\
+	__DEQUALIFY(s *, (const volatile char *)__x - __offsetof(s, m));\
+})
+
 /* Requires freebsd-gcc extensions */
 #define __printf0like(fmtarg, firstvararg)
 

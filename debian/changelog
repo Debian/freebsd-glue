@@ -1,6 +1,7 @@
 freebsd-glue (0.0.8) UNRELEASED; urgency=low
 
   * Include <grp.h> in <unistd.h> (for initgroups).
+  * Add __containerof() to <sys/cdefs.h>.
 
  -- Robert Millan <rmh@debian.org>  Wed, 10 Jul 2013 00:12:06 +0200
 
