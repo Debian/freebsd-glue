@@ -1,11 +1,11 @@
-freebsd-glue (0.0.8) UNRELEASED; urgency=low
+freebsd-glue (0.0.8) unstable; urgency=low
 
   * Include <grp.h> in <unistd.h> (for initgroups).
   * Add __containerof() to <sys/cdefs.h>.
   * Add roundup2 in <sys/param.h>. It is no longer provided by glibc
     (??).
 
- -- Robert Millan <rmh@debian.org>  Wed, 10 Jul 2013 00:12:06 +0200
+ -- Robert Millan <rmh@debian.org>  Tue, 16 Jul 2013 15:21:09 +0200
 
 freebsd-glue (0.0.7) unstable; urgency=low
 
