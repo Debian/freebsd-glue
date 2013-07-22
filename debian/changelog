@@ -1,4 +1,4 @@
-freebsd-glue (0.0.9) UNRELEASED; urgency=low
+freebsd-glue (0.0.9) unstable; urgency=low
 
   * Make <sys/_types.h> and <machine/_types.h> usable on non-kFreeBSD.
 
