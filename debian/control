@@ -5,8 +5,8 @@ Maintainer: GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>
 Uploaders: Robert Millan <rmh@debian.org>
 Build-Depends:
  debhelper (>= 8.0),
-Vcs-Browser: http://svn.debian.org/wsvn/glibc-bsd/trunk/freebsd-glue/
-Vcs-Svn: svn://svn.debian.org/glibc-bsd/trunk/freebsd-glue/
+Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
+Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.3
 
 Package: freebsd-glue
