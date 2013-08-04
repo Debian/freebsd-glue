@@ -5,12 +5,13 @@ Maintainer: GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>
 Uploaders: Robert Millan <rmh@debian.org>
 Build-Depends:
  debhelper (>= 8.0),
+ freebsd-buildutils,
 Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
 Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.3
 
 Package: freebsd-glue
-Architecture: all
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  original-awk,
  make,
