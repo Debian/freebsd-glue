@@ -2,6 +2,8 @@ freebsd-glue (0.1.1) UNRELEASED; urgency=low
 
   * Put includes of <sys/kern/*.h> OUTSIDE the header protection (which
     they intentionally duplicate).
+  * FreeBSD <stdio.h> and <sys/types.h> have a kludge to declare
+    lseek(). Duplicate the Glibc declaration here.
 
  -- Robert Millan <rmh@debian.org>  Sun, 04 Aug 2013 18:20:40 +0200
 

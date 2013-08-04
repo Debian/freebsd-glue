@@ -12,6 +12,11 @@
 #  include <machine/endian.h>
 #  include <sys/select.h>
 
+/* FreeBSD <sys/types.h> has a few ugly kludges to declare a copy of
+   functions which actually belong to <unistd.h>. We do the same
+   here.  */
+#  include <__want_lseek.h>
+
 #endif /* _SYS_TYPES_H_ */
 
 #endif /* __FreeBSD_kernel__ */

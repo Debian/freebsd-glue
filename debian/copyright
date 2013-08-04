@@ -122,6 +122,9 @@ Copyright:	1991, 1993, 1994, The Regents of the University of California.
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
 
+Files:		include/__want_lseek.h
+Copyright:	1991-2009, 2010 Free Software Foundation, Inc.
+License:	LGPL-2.1
 
 License: LGPL-3+
  On Debian systems the full text of the GNU Lesser General Public

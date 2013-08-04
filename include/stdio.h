@@ -5,4 +5,9 @@
 
 #include_next <bsd/stdio.h>
 
+/* FreeBSD <stdio.h> has a few ugly kludges to declare a copy of
+   functions which actually belong to <unistd.h>. We do the same
+   here.  */
+#include <__want_lseek.h>
+
 #endif
