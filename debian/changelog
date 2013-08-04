@@ -1,3 +1,10 @@
+freebsd-glue (0.1.1) UNRELEASED; urgency=low
+
+  * Put includes of <sys/kern/*.h> OUTSIDE the header protection (which
+    they intentionally duplicate).
+
+ -- Robert Millan <rmh@debian.org>  Sun, 04 Aug 2013 18:20:40 +0200
+
 freebsd-glue (0.1.0) unstable; urgency=low
 
   * Fix header pollution in <unistd.h> by moving non-trivial inline
