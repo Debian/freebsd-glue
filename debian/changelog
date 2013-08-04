@@ -4,6 +4,7 @@ freebsd-glue (0.1.1) UNRELEASED; urgency=low
     they intentionally duplicate).
   * FreeBSD <stdio.h> and <sys/types.h> have a kludge to declare
     lseek(). Duplicate the Glibc declaration here.
+  * <sys/stat.h> implicitly includes <sys/time.h>.
 
  -- Robert Millan <rmh@debian.org>  Sun, 04 Aug 2013 18:20:40 +0200
 
