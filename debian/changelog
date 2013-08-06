@@ -1,4 +1,4 @@
-freebsd-glue (0.1.1) UNRELEASED; urgency=low
+freebsd-glue (0.1.1) unstable; urgency=low
 
   * Put includes of <sys/kern/*.h> OUTSIDE the header protection (which
     they intentionally duplicate).
