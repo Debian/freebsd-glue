@@ -1,3 +1,9 @@
+freebsd-glue (0.1.2) unstable; urgency=low
+
+  * Add <sys/_stdint.h> to fix buildability of <libutil.h>.
+
+ -- Robert Millan <rmh@debian.org>  Tue, 06 Aug 2013 17:22:40 +0200
+
 freebsd-glue (0.1.1) unstable; urgency=low
 
   * Put includes of <sys/kern/*.h> OUTSIDE the header protection (which
