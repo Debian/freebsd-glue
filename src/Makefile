@@ -11,6 +11,7 @@ SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 
 .if ${SYS} == "kfreebsd-gnu"
 SRCS+=	\
+	disklabel.c \
 	linkaddr.c \
 	${NULL}
 .endif
