@@ -5,4 +5,10 @@
 
 #include <bsd/stdlib.h>
 
+__BEGIN_DECLS
+
+void srandomdev (void);
+
+__END_DECLS
+
 #endif

@@ -3,6 +3,7 @@ SRCS=	\
 	exec.c \
 	feature_present.c \
 	getosreldate.c \
+	random.c \
 	trimdomain.c \
 	${NULL}
 
