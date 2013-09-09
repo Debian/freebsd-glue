@@ -31,6 +31,7 @@
  */
 
 #ifdef __FreeBSD_kernel__
+#include_next <sys/queue.h>	/* Supply disabled macros using the Glibc version */
 #include <sys/kern/queue.h>
 #else
 #include_next <sys/queue.h>

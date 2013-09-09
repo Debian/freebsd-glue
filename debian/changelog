@@ -1,3 +1,10 @@
+freebsd-glue (0.1.5) unstable; urgency=low
+
+  * Add include_next <sys/queue.h> to sys/queue.h in order to bring back
+    macros that were disabled in kernel headers.
+
+ -- Robert Millan <rmh@debian.org>  Mon, 09 Sep 2013 15:06:42 +0200
+
 freebsd-glue (0.1.4) unstable; urgency=low
 
   * Implement srandomdev().
