@@ -40,6 +40,9 @@
 #ifdef __FreeBSD_kernel__
 
 #include <sys/kern/param.h>
+#if !defined(__FreeBSD_version) && defined(__FreeBSD_kernel_version)
+#define __FreeBSD_version __FreeBSD_kernel_version
+#endif
 
 #else
 
