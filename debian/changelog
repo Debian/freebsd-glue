@@ -1,6 +1,8 @@
 freebsd-glue (0.1.6) UNRELEASED; urgency=low
 
   * Define __FreeBSD_version as __FreeBSD_kernel_version when available.
+  * Implement setfib, setfstab (as ENOSYS stub) and getfstab (with
+    hardcoded return value).
 
  -- Robert Millan <rmh@debian.org>  Wed, 02 Oct 2013 23:41:17 +0200
 
