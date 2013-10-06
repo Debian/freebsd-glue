@@ -1,7 +1,7 @@
 #include_next <rpc/xdr.h>
 
-#ifndef _RPC_XDR_H
-#define _RPC_XDR_H
+#ifndef _FREEBSD_RPC_XDR_H
+#define _FREEBSD_RPC_XDR_H
 
 #include <sys/cdefs.h>
 

@@ -1,3 +1,10 @@
+freebsd-glue (0.1.8) unstable; urgency=low
+
+  * Change header protectionin <rpc/xdr.h> to avoid collision with
+    glibc's.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 06 Oct 2013 15:03:15 +0200
+
 freebsd-glue (0.1.7) unstable; urgency=low
 
   * Fix minor formatting error in setfstab().
