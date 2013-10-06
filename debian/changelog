@@ -1,4 +1,4 @@
-freebsd-glue (0.1.7) UNRELEASED; urgency=low
+freebsd-glue (0.1.7) unstable; urgency=low
 
   * Fix minor formatting error in setfstab().
   * Add <rpc/xdr.h>.
