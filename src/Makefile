@@ -7,6 +7,7 @@ SRCS=	\
 	getosreldate.c \
 	random.c \
 	trimdomain.c \
+	zopen.c \
 	${NULL}
 
 SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
