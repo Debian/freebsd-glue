@@ -1,6 +1,7 @@
 freebsd-glue (0.1.9) UNRELEASED; urgency=low
 
   * Build with full -Werror.
+  * Implement funopen(), fropen() and fwopen().
 
  -- Robert Millan <rmh@debian.org>  Tue, 08 Oct 2013 00:28:49 +0200
 

@@ -3,6 +3,7 @@ SRCS=	\
 	exec.c \
 	feature_present.c \
 	fstab.c \
+	funopen.c \
 	getosreldate.c \
 	random.c \
 	trimdomain.c \
