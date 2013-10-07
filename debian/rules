@@ -2,7 +2,7 @@
 # -*- makefile -*-
 
 CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE \
-	-Werror=implicit-function-declaration \
+	-Werror \
 	-isystem $(CURDIR)/include \
 	$(NULL)
 DESTDIR = $(CURDIR)/debian/tmp
