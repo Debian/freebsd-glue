@@ -6,6 +6,7 @@ Uploaders: Robert Millan <rmh@debian.org>
 Build-Depends:
  debhelper (>= 8.0),
  freebsd-buildutils,
+ libdb-dev,
 Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
 Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.3
@@ -16,6 +17,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  original-awk,
  make,
  libbsd-dev (>= 0.4.0-1~),
+ libdb-dev,
  libexpat-dev,
  byacc,
 Recommends:

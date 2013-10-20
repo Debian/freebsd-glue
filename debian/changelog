@@ -1,3 +1,9 @@
+freebsd-glue (0.1.10) unstable; urgency=low
+
+  * Add libdb-dev to Depends / Build-Depends.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 20 Oct 2013 12:56:14 +0200
+
 freebsd-glue (0.1.9) unstable; urgency=low
 
   * Build with full -Werror.
