@@ -1,4 +1,4 @@
-freebsd-glue (0.1.11) UNRELEASED; urgency=low
+freebsd-glue (0.1.11) unstable; urgency=low
 
   * Fix unresolved dependencies on libc hidden symbols (_open, _read,
     _close), libdb and cpuset family of functions.
