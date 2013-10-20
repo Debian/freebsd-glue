@@ -9,8 +9,10 @@ __BEGIN_DECLS
 
 u_int32_t arc4random (void);
 const char *getprogname(void);
+void setprogname (const char *);
 void *reallocf(void *ptr, size_t size);
 void srandomdev (void);
+long long strtonum (const char *nptr, long long minval, long long maxval, const char **errstr);
 
 char	*cgetcap(char *, const char *, int);
 int	 cgetclose(void);

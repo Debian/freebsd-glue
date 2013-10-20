@@ -12,10 +12,15 @@ SRCS=	\
 	zopen.c \
 	${NULL}
 
+LDADD=	-ldb
+
+CFLAGS+=	-D__FREEBSD_LIBC
+
 SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 
 .if ${SYS} == "kfreebsd-gnu"
 SRCS+=	\
+	cpuset.c \
 	disklabel.c \
 	linkaddr.c \
 	login_class.c \

@@ -1,3 +1,10 @@
+freebsd-glue (0.1.11) UNRELEASED; urgency=low
+
+  * Fix unresolved dependencies on libc hidden symbols (_open, _read,
+    _close), libdb and cpuset family of functions.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 20 Oct 2013 15:14:22 +0200
+
 freebsd-glue (0.1.10) unstable; urgency=low
 
   * Add libdb-dev to Depends / Build-Depends.
