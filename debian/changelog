@@ -1,4 +1,4 @@
-freebsd-glue (0.1.9) UNRELEASED; urgency=low
+freebsd-glue (0.1.9) unstable; urgency=low
 
   * Build with full -Werror.
   * Implement funopen(), fropen() and fwopen().
@@ -10,7 +10,7 @@ freebsd-glue (0.1.9) UNRELEASED; urgency=low
   * Add getloginclass() and setloginclass() kernel calls.
   * Add dummy crypt_get_format() and crypt_set_format().
 
- -- Robert Millan <rmh@debian.org>  Tue, 08 Oct 2013 00:28:49 +0200
+ -- Robert Millan <rmh@debian.org>  Sun, 20 Oct 2013 02:08:57 +0200
 
 freebsd-glue (0.1.8) unstable; urgency=low
 
