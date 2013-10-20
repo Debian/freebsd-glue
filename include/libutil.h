@@ -1,5 +1,5 @@
-#ifndef _FREEBSD_LIBUTIL_H_
-#define _FREEBSD_LIBUTIL_H_
+#ifndef _FREEBSD_GLUE_LIBUTIL_H_
+#define _FREEBSD_GLUE_LIBUTIL_H_
 
 #include <bsd/libutil.h>
 

@@ -3,6 +3,12 @@ freebsd-glue (0.1.9) UNRELEASED; urgency=low
   * Build with full -Werror.
   * Implement funopen(), fropen() and fwopen().
   * Add zopen().
+  * New headers: grp.h, db.h (as <db_185.h> stub).
+  * Add _PATH_ETC.
+  * Fix stdlib.h indirect load of libutil.h.
+  * Add cget* family of functions.
+  * Add getloginclass() and setloginclass() kernel calls.
+  * Add dummy crypt_get_format() and crypt_set_format().
 
  -- Robert Millan <rmh@debian.org>  Tue, 08 Oct 2013 00:28:49 +0200
 

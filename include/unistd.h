@@ -4,9 +4,11 @@
 #define	_UNISTD_H_
 
 #include <grp.h>	/* initgroups */
+#include <crypt.h>	/* crypt */
 
 #ifdef __FreeBSD_kernel__
 #include <sys/syscall.h>
+#include <stddef.h>	/* size_t */
 #endif
 
 #define getopt(argc, argv, options) bsd_getopt(argc, argv, options)
@@ -51,9 +53,15 @@ nlm_syscall (int a, int b, int c, char **d)
   return syscall (SYS_nlm_syscall, a, b, c, d);
 }
 
+int getloginclass (char *name, size_t len);
+int setloginclass (const char *name);
+
 #endif /* __FreeBSD_kernel__ */
 
 void setproctitle(const char *fmt, ...);
+
+const char *crypt_get_format (void);
+int crypt_set_format (const char *string);
 
 __END_DECLS
 
