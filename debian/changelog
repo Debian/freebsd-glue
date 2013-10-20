@@ -3,6 +3,7 @@ freebsd-glue (0.1.11) UNRELEASED; urgency=low
   * Fix unresolved dependencies on libc hidden symbols (_open, _read,
     _close), libdb and cpuset family of functions.
   * Add zlib1g-dev to Build-Depends and Depends.
+  * getosreldate.c: Move mib and size to kFreeBSD-specific area.
 
  -- Robert Millan <rmh@debian.org>  Sun, 20 Oct 2013 15:14:22 +0200
 

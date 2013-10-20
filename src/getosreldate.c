@@ -34,8 +34,6 @@
 int
 getosreldate(void)
 {
-	int mib[2];
-	size_t size;
 	int value;
 	char *temp;
 
@@ -45,6 +43,8 @@ getosreldate(void)
 	}
 
 #ifdef __FreeBSD_kernel__ 
+	int mib[2];
+	size_t size;
 	mib[0] = CTL_KERN;
 	mib[1] = KERN_OSRELDATE;
 	size = sizeof value;
