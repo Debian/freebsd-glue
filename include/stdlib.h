@@ -8,6 +8,7 @@
 __BEGIN_DECLS
 
 u_int32_t arc4random (void);
+void arc4random_stir (void);
 const char *getprogname(void);
 void setprogname (const char *);
 void *reallocf(void *ptr, size_t size);
