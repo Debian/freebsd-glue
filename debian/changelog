@@ -1,3 +1,9 @@
+freebsd-glue (0.1.12) UNRELEASED; urgency=low
+
+  * Fix improper allocation in funopen(). (Closes: #726970)
+
+ -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 00:27:03 +0200
+
 freebsd-glue (0.1.11) unstable; urgency=low
 
   * Fix unresolved dependencies on libc hidden symbols (_open, _read,

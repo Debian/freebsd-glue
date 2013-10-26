@@ -1,37 +1,64 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <errno.h>
+
+struct cookiebox
+{
+  void *cookie;
+  int (*readfn) (void *, char *, int);
+  int (*writefn) (void *, const char *, int);
+  int (*closefn) (void *);
+};
+
+static ssize_t
+cookiebox_read (void *cookie, char *buf, size_t size)
+{
+  struct cookiebox *cookiebox = cookie;
+  return cookiebox->readfn (cookiebox->cookie, buf, size);
+}
+
+static ssize_t
+cookiebox_write (void *cookie, const char *buf, size_t size)
+{
+  struct cookiebox *cookiebox = cookie;
+  return cookiebox->writefn (cookiebox->cookie, buf, size);
+}
+
+static int
+cookiebox_close (void *cookie)
+{
+  struct cookiebox *cookiebox = cookie;
+  int ret = cookiebox->closefn (cookiebox->cookie);
+  free (cookiebox);
+  return ret;
+}
 
 FILE *
 funopen (const void *cookie, int (*readfn)(void *, char *, int),
 	 int (*writefn)(void *, const char *, int),
 	 fpos_t (*seekfn)(void *, fpos_t, int), int (*closefn)(void *))
 {
-  auto ssize_t cookie_read (void *cookie, char *buf, size_t size);
-  auto ssize_t cookie_read (void *cookie, char *buf, size_t size)
-  {
-    return readfn (cookie, buf, size);
-  }
-
-  auto ssize_t cookie_write (void *cookie, const char *buf, size_t size);
-  auto ssize_t cookie_write (void *cookie, const char *buf, size_t size)
-  {
-    return writefn (cookie, buf, size);
-  }
-
   if (seekfn)
     {
       errno = ENOSYS;
       return NULL;
     }
 
-  cookie_io_functions_t funcs = {
-    .read = cookie_read,
-    .write = cookie_write,
+  cookie_io_functions_t cookiebox_funcs = {
+    .read = cookiebox_read,
+    .write = cookiebox_write,
     .seek = NULL,
-    .close = closefn
+    .close = cookiebox_close
   };
 
-  return fopencookie ((void *) cookie, "r+", funcs);
+  struct cookiebox *cookiebox = malloc (sizeof (*cookiebox));
+  
+  cookiebox->cookie = (void *) cookie;
+  cookiebox->readfn = readfn;
+  cookiebox->writefn = writefn;
+  cookiebox->closefn = closefn;
+
+  return fopencookie ((void *) cookiebox, "r+", cookiebox_funcs);
 }
 
 FILE *
