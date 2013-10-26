@@ -81,11 +81,13 @@
 	    (var) = (tvar))
 #endif
 
-#ifndef TAILQ_FOREACH_REVERSE_SAFE
-#define	TAILQ_FOREACH_REVERSE_SAFE(var, head, headname, field, tvar)	\
-	for ((var) = (*(((struct headname *)((head)->tqh_last))->tqh_last));	\
-	    (var) && ((tvar) = (*(((struct headname *)((elm)->field.tqe_prev))->tqh_last)), 1);	\
-	    (var) = (tvar))
 #endif
 
+
+#ifdef TAILQ_FOREACH_REVERSE_SAFE
+#undef TAILQ_FOREACH_REVERSE_SAFE
+#define	TAILQ_FOREACH_REVERSE_SAFE(var, head, headname, field, tvar)	\
+	for ((var) = (*(((struct headname *)((head)->tqh_last))->tqh_last));	\
+	    (var) && ((tvar) = (*(((struct headname *)((var)->field.tqe_prev))->tqh_last)), 1);	\
+	    (var) = (tvar))
 #endif
