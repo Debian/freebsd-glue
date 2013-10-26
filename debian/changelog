@@ -1,11 +1,11 @@
-freebsd-glue (0.1.12) UNRELEASED; urgency=low
+freebsd-glue (0.1.12) unstable; urgency=low
 
   * Fix improper allocation in funopen(). (Closes: #726970)
   * Add _PATH_UFSSUSPEND.
   * Add arc4random_stir() prototype (for libbsd).
   * Work around broken macro argument in TAILQ_FOREACH_REVERSE_SAFE
 
- -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 00:27:03 +0200
+ -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 16:09:29 +0200
 
 freebsd-glue (0.1.11) unstable; urgency=low
 
