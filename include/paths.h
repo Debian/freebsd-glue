@@ -7,9 +7,12 @@
 
 #define _PATH_ETC	"/etc"
 #define	_PATH_SYSPATH	"/sbin:/usr/sbin"
-#define _PATH_FWMEM	"/dev/fwmem"
 #define _PATH_IFCONFIG	"/sbin/ifconfig"
 #define _PATH_MOUNT	"/sbin/mount"
+
+#ifdef __FreeBSD_kernel__
+#define _PATH_FWMEM		"/dev/fwmem"
 #define	_PATH_UFSSUSPEND	"/dev/ufssuspend"
+#endif
 
 #endif

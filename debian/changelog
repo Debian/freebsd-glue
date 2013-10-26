@@ -1,3 +1,9 @@
+freebsd-glue (0.1.13) UNRELEASED; urgency=low
+
+  * Disable kernel-specific paths on non-kFreeBSD.
+
+ -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
+
 freebsd-glue (0.1.12) unstable; urgency=low
 
   * Fix improper allocation in funopen(). (Closes: #726970)
