@@ -5,6 +5,7 @@ freebsd-glue (0.1.13) UNRELEASED; urgency=low
 
   [ rmh ]
   * Add <osreldate.h> and <sys/limits.h>.
+  * Add STAILQ_LAST() to <sys/queue.h>.
 
  -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
 

@@ -74,6 +74,14 @@
 	    (var) = (tvar))
 #endif
 
+#ifndef STAILQ_LAST
+#define	STAILQ_LAST(head, type, field)					\
+	(STAILQ_EMPTY((head)) ?						\
+		NULL :							\
+	        ((struct type *)(void *)				\
+		((char *)((head)->stqh_last) - __offsetof(struct type, field))))
+#endif
+
 #ifndef TAILQ_FOREACH_SAFE 
 #define	TAILQ_FOREACH_SAFE(var, head, field, tvar)			\
 	for ((var) = ((head)->tqh_first);				\
