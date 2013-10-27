@@ -1,6 +1,10 @@
 freebsd-glue (0.1.13) UNRELEASED; urgency=low
 
+  [ Robert Millan ]
   * Disable kernel-specific paths on non-kFreeBSD.
+
+  [ rmh ]
+  * Add <osreldate.h> and <sys/limits.h>.
 
  -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
 
