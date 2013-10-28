@@ -1,6 +1,5 @@
-freebsd-glue (0.1.13) UNRELEASED; urgency=low
+freebsd-glue (0.1.13) unstable; urgency=low
 
-  [ Robert Millan ]
   * Disable kernel-specific paths on non-kFreeBSD.
   * Add <osreldate.h> and <sys/limits.h>.
   * Add STAILQ_LAST() to <sys/queue.h>.
@@ -9,7 +8,7 @@ freebsd-glue (0.1.13) UNRELEASED; urgency=low
     platforms.
   * Add <machine/elf.h> (with tricky build magic to generate ELF_ARCH).
 
- -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
+ -- Robert Millan <rmh@debian.org>  Mon, 28 Oct 2013 23:10:03 +0100
 
 freebsd-glue (0.1.12) unstable; urgency=low
 
