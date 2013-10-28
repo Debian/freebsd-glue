@@ -8,10 +8,15 @@ PMAKE := DESTDIR="$(DESTDIR)" make
 clean:
 	dh_testdir
 	$(PMAKE) clean
+	rm -f include/machine/__get_elf_arch.h src/get_elf_arch
 	dh_clean
 
+src/get_elf_arch: src/get_elf_arch.c
+include/machine/__get_elf_arch.h: src/get_elf_arch
+	$^ > $@
+
 build: build-arch
-build-arch:
+build-arch: include/machine/__get_elf_arch.h
 	$(PMAKE)
 
 build-indep:

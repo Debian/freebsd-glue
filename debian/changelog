@@ -7,6 +7,7 @@ freebsd-glue (0.1.13) UNRELEASED; urgency=low
   * Move CFLAGS to src/Makefile.
   * Expand <sys/elf32.h> and <sys/elf64.h> to support non-kFreeBSD
     platforms.
+  * Add <machine/elf.h> (with tricky build magic to generate ELF_ARCH).
 
  -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
 
