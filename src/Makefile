@@ -14,7 +14,11 @@ SRCS=	\
 
 LDADD=	-ldb
 
-CFLAGS+=	-D__FREEBSD_LIBC
+CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE \
+	-Werror \
+	-isystem ../include \
+	-D__FREEBSD_LIBC \
+	${NULL}
 
 SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 

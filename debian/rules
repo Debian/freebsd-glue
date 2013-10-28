@@ -1,13 +1,9 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE \
-	-Werror \
-	-isystem $(CURDIR)/include \
-	$(NULL)
 DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
-PMAKE := CFLAGS="$(CFLAGS)" DESTDIR="$(DESTDIR)" make
+PMAKE := DESTDIR="$(DESTDIR)" make
 
 clean:
 	dh_testdir
