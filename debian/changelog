@@ -5,6 +5,8 @@ freebsd-glue (0.1.13) UNRELEASED; urgency=low
   * Add <osreldate.h> and <sys/limits.h>.
   * Add STAILQ_LAST() to <sys/queue.h>.
   * Move CFLAGS to src/Makefile.
+  * Expand <sys/elf32.h> and <sys/elf64.h> to support non-kFreeBSD
+    platforms.
 
  -- Robert Millan <rmh@debian.org>  Sat, 26 Oct 2013 17:48:31 +0200
 
