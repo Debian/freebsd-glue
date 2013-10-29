@@ -1,4 +1,4 @@
-freebsd-glue (0.1.14) UNRELEASED; urgency=low
+freebsd-glue (0.1.14) unstable; urgency=low
 
   * Redirect to native <machine/elf.h> on kFreeBSD.
   * Build get_elf_arch.c using -Wall -Werror. Fix missing return and
