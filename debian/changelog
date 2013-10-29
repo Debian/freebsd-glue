@@ -1,6 +1,8 @@
 freebsd-glue (0.1.14) UNRELEASED; urgency=low
 
   * Redirect to native <machine/elf.h> on kFreeBSD.
+  * Build get_elf_arch.c using -Wall -Werror. Fix missing return and
+    implicit declarations.
 
  -- Robert Millan <rmh@debian.org>  Wed, 30 Oct 2013 00:04:50 +0100
 

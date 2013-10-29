@@ -5,6 +5,8 @@ DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
 PMAKE := DESTDIR="$(DESTDIR)" make
 
+CFLAGS = -Wall -Werror
+
 clean:
 	dh_testdir
 	$(PMAKE) clean

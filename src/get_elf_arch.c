@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <fcntl.h>
+#include <unistd.h>
 #include <elf.h>
 
 int
@@ -18,4 +19,6 @@ main (int argc, char **argv)
   printf ("#define ELF_ARCH %u\n", ehdr.e_machine);
 
   close (fd);
+
+  return 0;
 }
