@@ -1,3 +1,7 @@
+#ifdef __FreeBSD_kernel__
+#include_next <machine/elf.h>
+#else
+
 #ifndef _MACHINE_ELF_H_
 #define _MACHINE_ELF_H_ 1
 
@@ -31,3 +35,5 @@
 #endif
 
 #endif
+
+#endif /* __FreeBSD_kernel__ */

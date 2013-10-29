@@ -1,3 +1,9 @@
+freebsd-glue (0.1.14) UNRELEASED; urgency=low
+
+  * Redirect to native <machine/elf.h> on kFreeBSD.
+
+ -- Robert Millan <rmh@debian.org>  Wed, 30 Oct 2013 00:04:50 +0100
+
 freebsd-glue (0.1.13) unstable; urgency=low
 
   * Disable kernel-specific paths on non-kFreeBSD.
