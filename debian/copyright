@@ -184,6 +184,11 @@ Files:		src/zopen.c
 Copyright:	Johan Danielsson
 License:	Public domain
 
+Files:		src/mac.c
+Copyright:	2002, 2003 Networks Associates Technology, Inc
+		1999, 2000, 2001, 2002 Robert N. M. Watson
+License:	BSD (2 clause)
+
 License: LGPL-3+
  On Debian systems the full text of the GNU Lesser General Public
  License can be found in the `/usr/share/common-licenses/LGPL'

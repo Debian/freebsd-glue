@@ -2,6 +2,7 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
 
   * Add INADDR_ALLRPTS_GROUP, INADDR_CARP_GROUP, INADDR_PFSYNC_GROUP and
     INADDR_ALLMDNS_GROUP magic IPv4 addresses.
+  * Add the mac_* family of functions (as defined by <sys/mac.h>.
 
  -- Robert Millan <rmh@debian.org>  Fri, 01 Nov 2013 13:38:42 +0100
 

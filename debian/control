@@ -5,6 +5,7 @@ Maintainer: GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>
 Uploaders: Robert Millan <rmh@debian.org>
 Build-Depends:
  debhelper (>= 8.0),
+ kfreebsd-kernel-headers (>= 9.2~5) [kfreebsd-any],
  freebsd-buildutils,
  libdb-dev,
  zlib1g-dev,

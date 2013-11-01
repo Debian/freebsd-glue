@@ -28,6 +28,7 @@ SRCS+=	\
 	disklabel.c \
 	linkaddr.c \
 	login_class.c \
+	mac.c \
 	socket.c \
 	${NULL}
 .endif
