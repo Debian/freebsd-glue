@@ -4,6 +4,7 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
     INADDR_ALLMDNS_GROUP magic IPv4 addresses.
   * Add the mac_* family of functions (as defined by <sys/mac.h>.
   * Move <sys/stdint.h> to <stdint.h>.
+  * Add <sys/stdint.h> (as #include stub).
 
  -- Robert Millan <rmh@debian.org>  Fri, 01 Nov 2013 13:38:42 +0100
 
