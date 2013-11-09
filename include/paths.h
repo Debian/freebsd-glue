@@ -5,6 +5,7 @@
 
 #include <sys/cdefs.h>
 
+#define	_PATH_DEVZERO	"/dev/zero"
 #define _PATH_ETC	"/etc"
 #define	_PATH_SYSPATH	"/sbin:/usr/sbin"
 #define _PATH_IFCONFIG	"/sbin/ifconfig"
