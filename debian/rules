@@ -30,7 +30,7 @@ install-arch: build-arch
 	dh_prep -a
 	dh_installdirs -a
 	mkdir -p $(DESTDIR)/usr/lib
-	$(PMAKE) install SHLIBDIR=/usr/lib
+	$(PMAKE) install
 	dh_install -a --list-missing
 
 binary: binary-arch binary-indep

@@ -6,6 +6,8 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
   * Move <sys/stdint.h> to <stdint.h>.
   * Add <sys/stdint.h> (as #include stub).
   * Add _PATH_DEVZERO.
+  * Split additions for libcrypt, libutil and libz into separate
+    libraries.
 
  -- Robert Millan <rmh@debian.org>  Fri, 01 Nov 2013 13:38:42 +0100
 
