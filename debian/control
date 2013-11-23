@@ -22,6 +22,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  libdb-dev,
  zlib1g-dev,
  libexpat-dev,
+ libgdbm-dev,
  byacc,
 Recommends:
 # Can't put this in Depends because it would introduce a circular dependency

@@ -9,6 +9,7 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
   * Split additions for libcrypt, libutil and libz into separate
     libraries.
   * Add getbootfile().
+  * Add <ndbm.h> stub (for libgdbm).
 
  -- Robert Millan <rmh@debian.org>  Sat, 23 Nov 2013 20:57:05 +0100
 
