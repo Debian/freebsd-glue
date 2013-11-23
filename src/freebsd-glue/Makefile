@@ -17,6 +17,7 @@ SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 SRCS+=	\
 	cpuset.c \
 	disklabel.c \
+	getbootfile.c \
 	linkaddr.c \
 	login_class.c \
 	mac.c \

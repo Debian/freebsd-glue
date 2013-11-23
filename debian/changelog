@@ -8,8 +8,9 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
   * Add _PATH_DEVZERO.
   * Split additions for libcrypt, libutil and libz into separate
     libraries.
+  * Add getbootfile().
 
- -- Robert Millan <rmh@debian.org>  Fri, 01 Nov 2013 13:38:42 +0100
+ -- Robert Millan <rmh@debian.org>  Sat, 23 Nov 2013 20:57:05 +0100
 
 freebsd-glue (0.1.14) unstable; urgency=low
 

@@ -16,4 +16,10 @@
 #define	_PATH_UFSSUSPEND	"/dev/ufssuspend"
 #endif
 
+__BEGIN_DECLS
+#ifdef __FreeBSD_kernel__
+const char *getbootfile(void);
+#endif
+__END_DECLS
+
 #endif
