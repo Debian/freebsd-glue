@@ -1,4 +1,4 @@
-freebsd-glue (0.1.15) UNRELEASED; urgency=low
+freebsd-glue (0.1.15) unstable; urgency=low
 
   * Add INADDR_ALLRPTS_GROUP, INADDR_CARP_GROUP, INADDR_PFSYNC_GROUP and
     INADDR_ALLMDNS_GROUP magic IPv4 addresses.
@@ -16,7 +16,7 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
   * Add mac_set family of functions.
   * Update copyright information.
 
- -- Robert Millan <rmh@debian.org>  Sat, 23 Nov 2013 20:57:05 +0100
+ -- Robert Millan <rmh@debian.org>  Sun, 24 Nov 2013 14:22:23 +0100
 
 freebsd-glue (0.1.14) unstable; urgency=low
 
