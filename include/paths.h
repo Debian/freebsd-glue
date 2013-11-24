@@ -10,6 +10,7 @@
 #define	_PATH_SYSPATH	"/sbin:/usr/sbin"
 #define _PATH_IFCONFIG	"/sbin/ifconfig"
 #define _PATH_MOUNT	"/sbin/mount"
+#define _PATH_UUCPLOCK	"/var/lock/"		/* as per FHS, section 5 */
 
 #ifdef __FreeBSD_kernel__
 #define _PATH_FWMEM		"/dev/fwmem"
