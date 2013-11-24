@@ -21,6 +21,7 @@ SRCS+=	\
 	linkaddr.c \
 	login_class.c \
 	mac.c \
+	mac_set.c \
 	socket.c \
 	${NULL}
 .endif

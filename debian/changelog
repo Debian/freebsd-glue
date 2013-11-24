@@ -13,6 +13,7 @@ freebsd-glue (0.1.15) UNRELEASED; urgency=low
   * Add <sys/file.h> (stub for <sys/kglue/sys/file.h>).
   * Add <sys/user.h> and <sys/proc.h>.
   * Add _PATH_UUCPLOCK (diverge from upstream as per FHS).
+  * Add mac_set family of functions.
 
  -- Robert Millan <rmh@debian.org>  Sat, 23 Nov 2013 20:57:05 +0100
 
