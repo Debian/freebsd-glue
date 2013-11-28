@@ -1,3 +1,9 @@
+freebsd-glue (0.1.16) UNRELEASED; urgency=low
+
+  * Fix broken external references in mac_set.c.
+
+ -- Robert Millan <rmh@debian.org>  Thu, 28 Nov 2013 15:32:45 +0100
+
 freebsd-glue (0.1.15) unstable; urgency=low
 
   * Add INADDR_ALLRPTS_GROUP, INADDR_CARP_GROUP, INADDR_PFSYNC_GROUP and
