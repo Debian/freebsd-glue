@@ -1,5 +1,5 @@
-#SHLIB_MAJOR = 0
-SHLIBDIR = /lib
+SHLIB_MAJOR ?= 0
+SHLIBDIR ?= /lib
 
 CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE \
 	-Werror \

@@ -1,2 +1,3 @@
 include/*		usr/include/freebsd
 usr/lib/lib*.a
+usr/lib/lib*.so

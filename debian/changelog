@@ -1,8 +1,14 @@
-freebsd-glue (0.1.16) UNRELEASED; urgency=low
+freebsd-glue (0.2.1) UNRELEASED; urgency=low
 
   * Fix broken external references in mac_set.c.
 
  -- Robert Millan <rmh@debian.org>  Thu, 28 Nov 2013 15:32:45 +0100
+
+freebsd-glue (0.2.0) experimental; urgency=low
+
+  * Provide a shared version of libfreebsd-glue.
+
+ -- Robert Millan <rmh@debian.org>  Fri, 29 Nov 2013 14:05:57 +0100
 
 freebsd-glue (0.1.15) unstable; urgency=low
 

@@ -1,11 +1,15 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+export SHELL = bash
+
 DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
 PMAKE := DESTDIR="$(DESTDIR)" make
 
 CFLAGS = -Wall -Werror
+
+DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
 clean:
 	dh_testdir
@@ -29,7 +33,7 @@ install-arch: build-arch
 	dh_testroot
 	dh_prep -a
 	dh_installdirs -a
-	mkdir -p $(DESTDIR)/usr/lib
+	mkdir -p $(DESTDIR)/{usr/,}lib
 	$(PMAKE) install
 	dh_install -a --list-missing
 
@@ -51,6 +55,9 @@ binary-arch: install-arch
 #	dh_perl
 #	dh_python
 	dh_makeshlibs -a
+ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
+	dh_makeshlibs -plibfreebsd-glue-0 --add-udeb=libfreebsd-glue-0-udeb
+endif
 	dh_installdeb -a
 	dh_shlibdeps -a
 	dh_gencontrol -a
