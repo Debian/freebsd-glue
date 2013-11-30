@@ -1,4 +1,4 @@
-freebsd-glue (0.2.2) UNRELEASED; urgency=low
+freebsd-glue (0.2.2) unstable; urgency=low
 
   * Add strnstr().
   * setfstab: Only fail when file != NULL. Set errno when failing.
