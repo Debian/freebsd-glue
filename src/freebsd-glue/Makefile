@@ -7,6 +7,7 @@ SRCS=	\
 	getcap.c \
 	getosreldate.c \
 	random.c \
+	strnstr.c \
 	${NULL}
 
 LDADD=	-lbsd -ldb

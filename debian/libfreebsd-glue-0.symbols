@@ -45,3 +45,4 @@ libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
  setfstab@Base 0.1.15
  (arch=kfreebsd-any)setloginclass@Base 0.1.15
  srandomdev@Base 0.1.15
+ strnstr@Base 0.2.2

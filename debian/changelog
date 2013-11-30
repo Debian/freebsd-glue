@@ -1,3 +1,9 @@
+freebsd-glue (0.2.2) UNRELEASED; urgency=low
+
+  * Add strnstr().
+
+ -- Robert Millan <rmh@debian.org>  Sat, 30 Nov 2013 12:09:03 +0100
+
 freebsd-glue (0.2.1) unstable; urgency=low
 
   * Fix broken external references in mac_set.c.

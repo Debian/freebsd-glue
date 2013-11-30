@@ -44,6 +44,10 @@ Files: src/freebsd-glue/feature_present.c
 Copyright: 2008, Yahoo!, Inc
 License: BSD (2 clause)
 
+Files: src/freebsd-glue/strnstr.c
+Copyright: 1990, 1993, 2001, Mike Barcroft <mike@FreeBSD.org>
+License: BSD (3 clause)
+
 Files: include/sys/param.h
 Copyright: 1982, 1986, 1989, 1993
   UNIX System Laboratories, Inc
