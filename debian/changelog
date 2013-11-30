@@ -2,6 +2,7 @@ freebsd-glue (0.2.2) UNRELEASED; urgency=low
 
   * Add strnstr().
   * setfstab: Only fail when file != NULL. Set errno when failing.
+  * Provide libbsdxml stubs (for libexpat).
 
  -- Robert Millan <rmh@debian.org>  Sat, 30 Nov 2013 12:09:03 +0100
 

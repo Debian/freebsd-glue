@@ -9,6 +9,7 @@ PMAKE := DESTDIR="$(DESTDIR)" make
 
 CFLAGS = -Wall -Werror
 
+DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
 clean:
@@ -35,6 +36,12 @@ install-arch: build-arch
 	dh_installdirs -a
 	mkdir -p $(DESTDIR)/{usr/,}lib
 	$(PMAKE) install
+
+	echo "GROUP( libexpat.so )" > \
+		$(DESTDIR)/usr/lib/libbsdxml.so
+	ln -s $(DEB_HOST_GNU_TYPE)/libexpat.a \
+		$(DESTDIR)/usr/lib/libbsdxml.a
+
 	dh_install -a --list-missing
 
 binary: binary-arch binary-indep
