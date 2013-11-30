@@ -7,7 +7,12 @@
 void
 setfstab (const char *file)
 {
-  fprintf (stderr, "setfstab: %s", strerror (ENOSYS));
+  /* NULL means /etc/fstab */
+  if (file != NULL)
+    {
+      errno = ENOSYS;
+      warn ("setfstab");
+    }
 }
 
 const char *getfstab (void)
