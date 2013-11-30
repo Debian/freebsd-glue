@@ -1,3 +1,9 @@
+freebsd-glue (0.2.3) unstable; urgency=low
+
+  * Only install *.so symlink for libfreebsd-glue.
+
+ -- Robert Millan <rmh@debian.org>  Sat, 30 Nov 2013 13:08:07 +0100
+
 freebsd-glue (0.2.2) unstable; urgency=low
 
   * Add strnstr().
