@@ -24,6 +24,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  zlib1g-dev,
  libexpat-dev,
  libgdbm-dev,
+ libutil-freebsd-dev,
  byacc,
 Recommends:
 # Can't put this in Depends because it would introduce a circular dependency

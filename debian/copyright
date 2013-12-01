@@ -21,11 +21,6 @@ Files: include/sys/elf32.h
 Copyright: 1996-1998, John D. Polstra
 License: BSD (2 clause)
 
-Files: src/util/trimdomain.c
-Copyright: 2001, Brian Somers <brian@Awfulhak.org>
-           Based on original work by Atsushi Murai <amurai@FreeBSD.org>
-License: BSD (2 clause)
-
 Files: src/freebsd-glue/mac.c
  src/freebsd-glue/mac_set.c
 Copyright: 1999-2002, Robert N. M. Watson

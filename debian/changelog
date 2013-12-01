@@ -1,3 +1,9 @@
+freebsd-glue (0.2.4) unstable; urgency=low
+
+  * Remove libutil glue code, depend on the real thing instead.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 01 Dec 2013 12:58:10 +0100
+
 freebsd-glue (0.2.3) unstable; urgency=low
 
   * Only install *.so symlink for libfreebsd-glue.

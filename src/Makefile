@@ -1,6 +1,5 @@
 SUBDIR=	\
 	freebsd-glue \
-	util \
 	crypt \
 	z \
 	${NULL}
