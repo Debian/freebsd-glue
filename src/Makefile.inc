@@ -3,6 +3,6 @@ SHLIBDIR ?= /lib
 
 CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE \
 	-Werror \
-	-isystem ../../include \
+	-isystem ${.CURDIR}/../../include \
 	-D__FREEBSD_LIBC \
 	${NULL}

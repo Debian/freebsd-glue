@@ -1,6 +1,8 @@
 freebsd-glue (0.2.5) UNRELEASED; urgency=low
 
   * Include libbsdxml.so in freebsd-glue.
+  * Split udeb build into a separate target. Exclude getcap.c from that
+    build and its associated -ldb.  (Closes: #731258)
 
  -- Robert Millan <rmh@debian.org>  Tue, 03 Dec 2013 22:28:21 +0100
 

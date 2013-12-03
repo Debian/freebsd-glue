@@ -15,6 +15,7 @@ DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 clean:
 	dh_testdir
 	$(PMAKE) clean
+	rm -rf obj{,-udeb}
 	rm -f include/machine/__get_elf_arch.h src/get_elf_arch
 	dh_clean
 
@@ -23,8 +24,17 @@ include/machine/__get_elf_arch.h: src/get_elf_arch
 	$^ > $@
 
 build: build-arch
-build-arch: include/machine/__get_elf_arch.h
-	$(PMAKE)
+build-arch: build-std build-udeb
+
+build-std: include/machine/__get_elf_arch.h
+	mkdir -p obj
+	MAKEOBJDIR=$(CURDIR)/obj \
+		$(PMAKE)
+
+build-udeb: include/machine/__get_elf_arch.h
+	mkdir -p obj-udeb
+	MAKEOBJDIR=$(CURDIR)/obj-udeb \
+		$(PMAKE) RESCUE=yes
 
 build-indep:
 	:
@@ -35,7 +45,9 @@ install-arch: build-arch
 	dh_prep -a
 	dh_installdirs -a
 	mkdir -p $(DESTDIR)/{usr/,}lib
-	$(PMAKE) install
+
+	MAKEOBJDIR=$(CURDIR)/obj \
+		$(PMAKE) install
 
 	echo "GROUP( libexpat.so )" > \
 		$(DESTDIR)/usr/lib/libbsdxml.so
