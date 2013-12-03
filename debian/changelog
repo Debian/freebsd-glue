@@ -1,4 +1,4 @@
-freebsd-glue (0.2.5) UNRELEASED; urgency=low
+freebsd-glue (0.2.5) unstable; urgency=low
 
   * Include libbsdxml.so in freebsd-glue.
   * Split udeb build into a separate target. Exclude getcap.c from that
