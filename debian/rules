@@ -7,8 +7,6 @@ DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
 PMAKE := DESTDIR="$(DESTDIR)" make
 
-CFLAGS = -Wall -Werror
-
 DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
@@ -29,11 +27,13 @@ build-arch: build-std build-udeb
 build-std: include/machine/__get_elf_arch.h
 	mkdir -p obj
 	MAKEOBJDIR=$(CURDIR)/obj \
+		CFLAGS="$(CFLAGS) -O2" \
 		$(PMAKE)
 
 build-udeb: include/machine/__get_elf_arch.h
 	mkdir -p obj-udeb
 	MAKEOBJDIR=$(CURDIR)/obj-udeb \
+		CFLAGS="$(CFLAGS) -Os" \
 		$(PMAKE) RESCUE=yes
 
 build-indep:
