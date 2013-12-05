@@ -1,1 +1,1 @@
-obj-udeb/libfreebsd-glue.so.*	lib
+debian/tmp-udeb/lib/libfreebsd-glue.so.*	lib

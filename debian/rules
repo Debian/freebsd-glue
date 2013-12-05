@@ -5,15 +5,23 @@ export SHELL = bash
 
 DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
-PMAKE := DESTDIR="$(DESTDIR)" make
+PMAKE := \
+	MAKEOBJDIRPREFIX=$(CURDIR)/obj-deb \
+	CFLAGS="$(CFLAGS) -O2" \
+	DESTDIR="$(DESTDIR)" \
+	make
+PMAKE_UDEB := \
+	MAKEOBJDIRPREFIX=$(CURDIR)/obj-udeb \
+	CFLAGS="$(CFLAGS) -Os" \
+	DESTDIR="$(DESTDIR)-udeb" \
+	make RESCUE=yes
 
 DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
 clean:
 	dh_testdir
-	$(PMAKE) clean
-	rm -rf obj{,-udeb}
+	rm -rf obj-{deb,udeb} debian/tmp-udeb
 	rm -f include/machine/__get_elf_arch.h src/get_elf_arch
 	dh_clean
 
@@ -22,19 +30,15 @@ include/machine/__get_elf_arch.h: src/get_elf_arch
 	$^ > $@
 
 build: build-arch
-build-arch: build-std build-udeb
+build-arch: build-deb build-udeb
 
-build-std: include/machine/__get_elf_arch.h
-	mkdir -p obj
-	MAKEOBJDIR=$(CURDIR)/obj \
-		CFLAGS="$(CFLAGS) -O2" \
-		$(PMAKE)
+build-deb: include/machine/__get_elf_arch.h
+	$(PMAKE) obj
+	$(PMAKE)
 
 build-udeb: include/machine/__get_elf_arch.h
-	mkdir -p obj-udeb
-	MAKEOBJDIR=$(CURDIR)/obj-udeb \
-		CFLAGS="$(CFLAGS) -Os" \
-		$(PMAKE) RESCUE=yes
+	$(PMAKE_UDEB) obj
+	$(PMAKE_UDEB)
 
 build-indep:
 	:
@@ -44,10 +48,10 @@ install-arch: build-arch
 	dh_testroot
 	dh_prep -a
 	dh_installdirs -a
-	mkdir -p $(DESTDIR)/{usr/,}lib
+	mkdir -p $(DESTDIR){,-udeb}/{usr/,}lib
 
-	MAKEOBJDIR=$(CURDIR)/obj \
-		$(PMAKE) install
+	$(PMAKE) install
+	$(PMAKE_UDEB) install
 
 	echo "GROUP( libexpat.so )" > \
 		$(DESTDIR)/usr/lib/libbsdxml.so

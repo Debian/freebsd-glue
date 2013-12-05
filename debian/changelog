@@ -1,8 +1,10 @@
 freebsd-glue (0.2.6) UNRELEASED; urgency=low
 
   * Use -O2 for normal build and -Os for udeb build.
+  * Use MAKEOBJDIRPREFIX instead of MAKEOBJDIR, so that each library has
+    its own object directory.
 
- -- Robert Millan <rmh@debian.org>  Wed, 04 Dec 2013 12:46:55 +0100
+ -- Robert Millan <rmh@debian.org>  Thu, 05 Dec 2013 20:26:27 +0100
 
 freebsd-glue (0.2.5) unstable; urgency=low
 
