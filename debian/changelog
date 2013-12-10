@@ -3,6 +3,8 @@ freebsd-glue (0.2.6) UNRELEASED; urgency=low
   * Use -O2 for normal build and -Os for udeb build.
   * Use MAKEOBJDIRPREFIX instead of MAKEOBJDIR, so that each library has
     its own object directory.
+  * Provide bsd_sendfile() syscall stub, and map sendfile() to it in
+    <sys/socket.h>.
 
  -- Robert Millan <rmh@debian.org>  Thu, 05 Dec 2013 20:26:27 +0100
 

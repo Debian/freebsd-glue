@@ -1,4 +1,5 @@
 libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
+ (arch=kfreebsd-any)bsd_sendfile@Base 0.2.6
  cgetcap@Base 0.1.15
  cgetclose@Base 0.1.15
  cgetent@Base 0.1.15
