@@ -4,17 +4,13 @@ SRCS=	\
 	feature_present.c \
 	fstab.c \
 	funopen.c \
+	getcap.c \
 	getosreldate.c \
 	random.c \
 	strnstr.c \
 	${NULL}
 
 LDADD=	-lbsd
-
-.if !defined(RESCUE)
-SRCS+=	getcap.c
-LDADD+= -ldb
-.endif
 
 SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 
