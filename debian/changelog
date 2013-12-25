@@ -8,6 +8,7 @@ freebsd-glue (0.2.6) UNRELEASED; urgency=low
   * Convert cget* family of functions into dummy stubs. This gets rid of
     -ldb dependency, which isn't permissible outside of /usr.
     (Closes: #732617)
+  * Add getpeereid().
 
  -- Robert Millan <rmh@debian.org>  Wed, 25 Dec 2013 12:43:23 +0100
 

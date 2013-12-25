@@ -56,6 +56,8 @@ nlm_syscall (int a, int b, int c, char **d)
 int getloginclass (char *name, size_t len);
 int setloginclass (const char *name);
 
+int getpeereid (int, uid_t *, gid_t *);
+
 #endif /* __FreeBSD_kernel__ */
 
 void setproctitle(const char *fmt, ...);

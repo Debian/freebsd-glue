@@ -19,6 +19,7 @@ SRCS+=	\
 	cpuset.c \
 	disklabel.c \
 	getbootfile.c \
+	getpeereid.c \
 	linkaddr.c \
 	login_class.c \
 	mac.c \
