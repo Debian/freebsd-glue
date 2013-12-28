@@ -25,7 +25,6 @@ libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
  getfstab@Base 0.1.15
  (arch=kfreebsd-any)getloginclass@Base 0.1.15
  getosreldate@Base 0.1.15
- (arch=kfreebsd-any)getpeereid@Base 0.2.6
  (arch=kfreebsd-any)link_addr@Base 0.1.15
  (arch=kfreebsd-any)link_ntoa@Base 0.1.15
  (arch=kfreebsd-any)mac_free@Base 0.1.15

@@ -1,3 +1,9 @@
+freebsd-glue (0.2.7) unstable; urgency=low
+
+  * Remove getpeereid(), use version from libbsd instead.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 29 Dec 2013 00:53:25 +0100
+
 freebsd-glue (0.2.6) unstable; urgency=low
 
   * Use -O2 for normal build and -Os for udeb build.
