@@ -1,4 +1,4 @@
-freebsd-glue (0.2.6) UNRELEASED; urgency=low
+freebsd-glue (0.2.6) unstable; urgency=low
 
   * Use -O2 for normal build and -Os for udeb build.
   * Use MAKEOBJDIRPREFIX instead of MAKEOBJDIR, so that each library has
@@ -10,7 +10,7 @@ freebsd-glue (0.2.6) UNRELEASED; urgency=low
     (Closes: #732617)
   * Add getpeereid().
 
- -- Robert Millan <rmh@debian.org>  Wed, 25 Dec 2013 12:43:23 +0100
+ -- Robert Millan <rmh@debian.org>  Sun, 29 Dec 2013 00:30:03 +0100
 
 freebsd-glue (0.2.5) unstable; urgency=low
 
