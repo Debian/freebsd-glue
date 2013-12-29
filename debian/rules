@@ -3,14 +3,23 @@
 
 export SHELL = bash
 
+ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+	NUMJOBS = $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+
+	# Do not mess with MAKEFLAGS until we transfer control to BSD make (see below)
+	BSD_MAKEFLAGS += -j$(NUMJOBS)
+endif
+
 DESTDIR = $(CURDIR)/debian/tmp
 PATH := /usr/lib/freebsd:$(PATH)
 PMAKE := \
+	MAKEFLAGS=$(BSD_MAKEFLAGS) \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-deb \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
 	make
 PMAKE_UDEB := \
+	MAKEFLAGS=$(BSD_MAKEFLAGS) \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-udeb \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
