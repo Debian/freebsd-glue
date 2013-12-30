@@ -1,4 +1,6 @@
 bin/dash		usr/lib/freebsd/sh
 usr/bin/original-awk	usr/lib/freebsd/awk
 usr/bin/make		usr/lib/freebsd/gmake
+usr/bin/fmake		usr/lib/freebsd/make
+usr/bin/fmtree		usr/lib/freebsd/mtree
 usr/bin/byacc		usr/lib/freebsd/yacc
