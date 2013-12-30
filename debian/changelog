@@ -3,6 +3,8 @@ freebsd-glue (0.2.8) UNRELEASED; urgency=low
   * Correctly setup BSD version of MAKEFLAGS to support parallel builds.
   * Provide legacy symlinks for make and mtree (for now, fmake and
     fmtree).
+  * Add wrapper for bmake (force it to use /usr/share/mk-freebsd instead
+    of its own /usr/share/mk).
 
  -- Robert Millan <rmh@debian.org>  Sun, 29 Dec 2013 20:44:42 +0100
 

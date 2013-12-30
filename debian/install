@@ -2,3 +2,4 @@ include/*		usr/include/freebsd
 usr/lib/lib*.a
 usr/lib/libfreebsd-glue.so
 usr/lib/libbsdxml.so
+debian/local/scripts/bmake	usr/lib/freebsd
