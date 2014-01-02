@@ -18,6 +18,7 @@ PMAKE := \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
 	fmake \
+	CC=gcc-4.8 \
 	$(NULL)
 PMAKE_UDEB := \
 	MAKEFLAGS=$(BSD_MAKEFLAGS) \
@@ -25,6 +26,7 @@ PMAKE_UDEB := \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
 	fmake \
+	CC=gcc-4.8 \
 	RESCUE=yes \
 	$(NULL)
 

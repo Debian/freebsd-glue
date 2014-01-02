@@ -1,3 +1,10 @@
+freebsd-glue (0.2.13) unstable; urgency=low
+
+  * Explicitly request gcc-4.8 as sbuild can't handle build dependencies
+    properly (sigh).
+
+ -- Robert Millan <rmh@debian.org>  Thu, 02 Jan 2014 20:15:04 +0100
+
 freebsd-glue (0.2.12) unstable; urgency=low
 
   * Invoke FreeBSD make explicitly as fmake.
