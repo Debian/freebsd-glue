@@ -1,3 +1,9 @@
+freebsd-glue (0.2.12) unstable; urgency=low
+
+  * Invoke FreeBSD make explicitly as fmake.
+
+ -- Robert Millan <rmh@debian.org>  Thu, 02 Jan 2014 19:47:27 +0100
+
 freebsd-glue (0.2.11) unstable; urgency=low
 
   * Yet another attempt at fixing FTBFS with older freebsd-buildutils...
