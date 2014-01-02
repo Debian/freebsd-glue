@@ -17,14 +17,14 @@ PMAKE := \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-deb \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
-	$(shell which fmake || which make) \
+	make \
 	$(NULL)
 PMAKE_UDEB := \
 	MAKEFLAGS=$(BSD_MAKEFLAGS) \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-udeb \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
-	$(shell which fmake || which make) \
+	make \
 	RESCUE=yes \
 	$(NULL)
 
