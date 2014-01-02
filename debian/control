@@ -9,6 +9,8 @@ Build-Depends:
  freebsd-buildutils,
  libdb-dev,
  zlib1g-dev,
+# For -Wno-error=maybe-uninitialized
+ gcc (>= 4:4.8) | gcc-4.8,
 Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
 Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.3

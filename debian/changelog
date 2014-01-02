@@ -1,6 +1,7 @@
 freebsd-glue (0.2.9) UNRELEASED; urgency=low
 
   * sysarch.c: Avoid conflicting declarations in <machine/sysarch.h>.
+  * Require GCC 4.8 or later to fix FTBFS on ia64, powerpc and sparc.
 
  -- Robert Millan <rmh@debian.org>  Thu, 02 Jan 2014 17:52:03 +0100
 
