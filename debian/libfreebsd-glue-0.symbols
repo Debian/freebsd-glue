@@ -1,4 +1,12 @@
 libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
+ (arch=kfreebsd-amd64)amd64_get_fsbase@Base 0.2.8
+ (arch=kfreebsd-amd64)amd64_get_gsbase@Base 0.2.8
+ (arch=kfreebsd-amd64)amd64_set_fsbase@Base 0.2.8
+ (arch=kfreebsd-amd64)amd64_set_gsbase@Base 0.2.8
+ (arch=kfreebsd-i386)i386_get_fsbase@Base 0.2.8
+ (arch=kfreebsd-i386)i386_get_gsbase@Base 0.2.8
+ (arch=kfreebsd-i386)i386_set_fsbase@Base 0.2.8
+ (arch=kfreebsd-i386)i386_set_gsbase@Base 0.2.8
  (arch=kfreebsd-any)bsd_sendfile@Base 0.2.6
  cgetcap@Base 0.1.15
  cgetclose@Base 0.1.15

@@ -5,6 +5,10 @@ freebsd-glue (0.2.8) UNRELEASED; urgency=low
     fmtree).
   * Add wrapper for bmake (force it to use /usr/share/mk-freebsd instead
     of its own /usr/share/mk).
+  * Add a few sysarch-based functions: amd64_get_fsbase,
+    amd64_get_gsbase, amd64_set_fsbase, amd64_set_gsbase,
+    i386_get_fsbase, i386_get_gsbase, i386_set_fsbase and
+    i386_set_gsbase.
 
  -- Robert Millan <rmh@debian.org>  Sun, 29 Dec 2013 20:44:42 +0100
 

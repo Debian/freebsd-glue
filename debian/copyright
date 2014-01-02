@@ -31,6 +31,10 @@ Files: src/freebsd-glue/random.c
 Copyright: 2013, Robert Millan <rmh@debian.org>
 License: BSD (2 clause)
 
+Files: src/freebsd-glue/sysarch.c
+Copyright: 2014, Robert Millan <rmh@debian.org>
+License: BSD (2 clause)
+
 Files: include/sys/endian.h
 Copyright: 2002, Thomas Moestl <tmm@FreeBSD.org>
 License: BSD (2 clause)

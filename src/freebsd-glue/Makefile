@@ -25,6 +25,7 @@ SRCS+=	\
 	mac_set.c \
 	socket.c \
 	sendfile.c \
+	sysarch.c \
 	${NULL}
 .endif
 
