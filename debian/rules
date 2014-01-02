@@ -17,13 +17,16 @@ PMAKE := \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-deb \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
-	make
+	$(shell which fmake || which make) \
+	$(NULL)
 PMAKE_UDEB := \
 	MAKEFLAGS=$(BSD_MAKEFLAGS) \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-udeb \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
-	make RESCUE=yes
+	$(shell which fmake || which make) \
+	RESCUE=yes \
+	$(NULL)
 
 DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)

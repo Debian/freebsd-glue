@@ -1,3 +1,11 @@
+freebsd-glue (0.2.10) unstable; urgency=low
+
+  * Attempt to use fmake, then fallback to make (in /usr/lib/freebsd).
+    This garantees FreeBSD make no matter which freebsd-buildutils we're
+    using.
+
+ -- Robert Millan <rmh@debian.org>  Thu, 02 Jan 2014 18:17:49 +0100
+
 freebsd-glue (0.2.9) unstable; urgency=low
 
   * sysarch.c: Avoid conflicting declarations in <machine/sysarch.h>.
