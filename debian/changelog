@@ -1,4 +1,4 @@
-freebsd-glue (0.2.8) UNRELEASED; urgency=low
+freebsd-glue (0.2.8) unstable; urgency=low
 
   * Correctly setup BSD version of MAKEFLAGS to support parallel builds.
   * Provide legacy symlinks for make and mtree (for now, fmake and
@@ -10,7 +10,7 @@ freebsd-glue (0.2.8) UNRELEASED; urgency=low
     i386_get_fsbase, i386_get_gsbase, i386_set_fsbase and
     i386_set_gsbase.
 
- -- Robert Millan <rmh@debian.org>  Sun, 29 Dec 2013 20:44:42 +0100
+ -- Robert Millan <rmh@debian.org>  Thu, 02 Jan 2014 16:03:44 +0100
 
 freebsd-glue (0.2.7) unstable; urgency=low
 
