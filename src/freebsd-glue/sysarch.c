@@ -24,7 +24,28 @@
  *
  */
 
+/* Temporary kludge to avoid conflicting declarations (static inline) in certain
+   versions of <machine/sysarch.h> */
+
+#define amd64_get_fsbase __disabled_amd64_get_fsbase
+#define amd64_get_gsbase __disabled_amd64_get_gsbase
+#define amd64_set_fsbase __disabled_amd64_set_fsbase
+#define amd64_set_gsbase __disabled_amd64_set_gsbase
+#define i386_get_fsbase __disabled_i386_get_fsbase
+#define i386_get_gsbase __disabled_i386_get_gsbase
+#define i386_set_fsbase __disabled_i386_set_fsbase
+#define i386_set_gsbase __disabled_i386_set_gsbase
+
 #include <machine/sysarch.h>
+
+#undef amd64_get_fsbase
+#undef amd64_get_gsbase
+#undef amd64_set_fsbase
+#undef amd64_set_gsbase
+#undef i386_get_fsbase
+#undef i386_get_gsbase
+#undef i386_set_fsbase
+#undef i386_set_gsbase
 
 #if defined(__amd64__)
 int
