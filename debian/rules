@@ -17,7 +17,7 @@ PMAKE := \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-deb \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
-	fmake \
+	bmake -m /usr/share/mk-freebsd \
 	CC=gcc-4.8 \
 	$(NULL)
 PMAKE_UDEB := \
@@ -25,7 +25,7 @@ PMAKE_UDEB := \
 	MAKEOBJDIRPREFIX=$(CURDIR)/obj-udeb \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
-	fmake \
+	bmake -m /usr/share/mk-freebsd \
 	CC=gcc-4.8 \
 	RESCUE=yes \
 	$(NULL)

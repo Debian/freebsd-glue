@@ -6,7 +6,8 @@ Uploaders: Robert Millan <rmh@debian.org>
 Build-Depends:
  debhelper (>= 8.0),
  kfreebsd-kernel-headers (>= 9.2~5) [kfreebsd-any],
- freebsd-buildutils (>= 10~svn251967-1~),
+ freebsd-mk,
+ bmake,
  libdb-dev,
  zlib1g-dev,
 # For -Wno-error=maybe-uninitialized
