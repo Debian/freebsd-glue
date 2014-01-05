@@ -21,6 +21,10 @@ Files: include/sys/elf32.h
 Copyright: 1996-1998, John D. Polstra
 License: BSD (2 clause)
 
+Files: include/sys/elf.h
+Copyright: 2001, David E. O'Brien
+License: BSD (2 clause)
+
 Files: src/freebsd-glue/mac.c
  src/freebsd-glue/mac_set.c
 Copyright: 1999-2002, Robert N. M. Watson

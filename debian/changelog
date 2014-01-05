@@ -1,3 +1,9 @@
+freebsd-glue (0.2.14) UNRELEASED; urgency=low
+
+  * Add <sys/elf.h>.
+
+ -- Robert Millan <rmh@debian.org>  Sun, 05 Jan 2014 22:21:00 +0100
+
 freebsd-glue (0.2.13) unstable; urgency=low
 
   * Explicitly request gcc-4.8 as sbuild can't handle build dependencies
