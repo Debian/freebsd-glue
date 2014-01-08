@@ -1,3 +1,10 @@
+freebsd-glue (0.2.16) UNRELEASED; urgency=low
+
+  * Only include <sys/sysctl.h> when needed (should fix FTBFS on
+    hurd-i386).
+
+ -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 12:59:25 +0100
+
 freebsd-glue (0.2.15) unstable; urgency=low
 
   * Fix /usr/lib/freebsd/bmake permissions.

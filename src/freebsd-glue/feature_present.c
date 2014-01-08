@@ -30,11 +30,14 @@
 
 #include <sys/cdefs.h>
 #include <sys/types.h>
-#include <sys/sysctl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
+#ifdef __FreeBSD_kernel__
+#include <sys/sysctl.h>
+#endif
 
 /*
  * Returns true if the named feature is present in the currently

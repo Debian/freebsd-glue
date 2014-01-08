@@ -28,8 +28,11 @@
  */
 
 #include <stddef.h>
-#include <sys/sysctl.h>
 #include <stdlib.h>
+
+#ifdef __FreeBSD_kernel__
+#include <sys/sysctl.h>
+#endif
 
 int
 getosreldate(void)
