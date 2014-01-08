@@ -17,6 +17,7 @@ main (int argc, char **argv)
     perror ("read");
 
   printf ("#define ELF_ARCH %u\n", ehdr.e_machine);
+  printf ("#define __ELF_WORD_SIZE %u\n", ehdr.e_ident[EI_CLASS] == ELFCLASS64 ? 64 : 32);
 
   close (fd);
 
