@@ -1,10 +1,10 @@
-freebsd-glue (0.2.15) UNRELEASED; urgency=low
+freebsd-glue (0.2.15) unstable; urgency=low
 
   * Fix /usr/lib/freebsd/bmake permissions.
   * Make the libbsd-dev B-D explicit now that freebsd-buildutils doesn't
     pull it.
 
- -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 02:06:11 +0100
+ -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 02:09:59 +0100
 
 freebsd-glue (0.2.14) unstable; urgency=low
 
