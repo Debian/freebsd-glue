@@ -1,10 +1,10 @@
-freebsd-glue (0.2.14) UNRELEASED; urgency=low
+freebsd-glue (0.2.14) unstable; urgency=low
 
   * Add <sys/elf.h>.
   * Switch to bmake, and finish breaking the circular build-dependency
     on freebsd-buildutils.
 
- -- Robert Millan <rmh@debian.org>  Sun, 05 Jan 2014 22:21:00 +0100
+ -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 01:30:59 +0100
 
 freebsd-glue (0.2.13) unstable; urgency=low
 
