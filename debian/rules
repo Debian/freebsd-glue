@@ -72,6 +72,9 @@ install-arch: build-arch
 	ln -s $(DEB_HOST_GNU_TYPE)/libexpat.a \
 		$(DESTDIR)/usr/lib/libbsdxml.a
 
+	mkdir -p $(DESTDIR)/usr/lib/freebsd
+	install -m755 debian/local/scripts/bmake $(DESTDIR)/usr/lib/freebsd/
+
 	dh_install -a --list-missing
 
 binary: binary-arch binary-indep
