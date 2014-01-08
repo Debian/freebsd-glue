@@ -8,6 +8,7 @@ Build-Depends:
  kfreebsd-kernel-headers (>= 9.2~5) [kfreebsd-any],
  freebsd-mk,
  bmake,
+ libbsd-dev,
  libdb-dev,
  zlib1g-dev,
 # For -Wno-error=maybe-uninitialized
