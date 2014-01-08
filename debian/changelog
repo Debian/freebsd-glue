@@ -1,11 +1,11 @@
-freebsd-glue (0.2.16) UNRELEASED; urgency=low
+freebsd-glue (0.2.16) unstable; urgency=low
 
   * Only include <sys/sysctl.h> when needed (should fix FTBFS on
     hurd-i386).
   * Add __ELF_WORD_SIZE to <machine/__get_elf_arch.h>.
   * Add a few FreeBSD-specific clocks on non-kFreeBSD systems.
 
- -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 12:59:25 +0100
+ -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 15:15:59 +0100
 
 freebsd-glue (0.2.15) unstable; urgency=low
 
