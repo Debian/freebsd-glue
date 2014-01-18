@@ -9,6 +9,7 @@ Files: include/err.h
  include/sys/cdefs.h
  include/sys/queue.h
  src/freebsd-glue/getbootfile.c
+ src/freebsd-glue/getbsize.c
  src/freebsd-glue/getcap.c
  src/freebsd-glue/getosreldate.c
  src/freebsd-glue/linkaddr.c
