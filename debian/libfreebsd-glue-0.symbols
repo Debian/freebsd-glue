@@ -29,6 +29,7 @@ libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
  funopen@Base 0.1.15
  fwopen@Base 0.1.15
  (arch=kfreebsd-any)getbootfile@Base 0.1.15
+ getbsize@Base 0.2.17
  (arch=kfreebsd-any)getdiskbyname@Base 0.1.15
  getfstab@Base 0.1.15
  (arch=kfreebsd-any)getloginclass@Base 0.1.15
