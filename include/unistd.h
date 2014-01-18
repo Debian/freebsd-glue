@@ -58,6 +58,9 @@ int setloginclass (const char *name);
 
 int getpeereid (int, uid_t *, gid_t *);
 
+int swapon (const char *);
+int swapoff (const char *);
+
 #endif /* __FreeBSD_kernel__ */
 
 void setproctitle(const char *fmt, ...);
