@@ -8,6 +8,7 @@ freebsd-glue (0.2.17) UNRELEASED; urgency=low
     also on GNU/kFreeBSD.
   * Update embedded copy of <sys/elf_common.h>.
   * Add getbsize().
+  * Add arc4random_buf() prototype to <stdlib.h>.
 
  -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 22:36:52 +0100
 
