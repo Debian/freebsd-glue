@@ -17,8 +17,12 @@ License: BSD (3 clause)
 
 Files: include/sys/elf32.h
  include/sys/elf64.h
- include/sys/elf_common.h
 Copyright: 1996-1998, John D. Polstra
+License: BSD (2 clause)
+
+Files: include/embed/sys/elf_common.h
+Copyright: 1998, John D. Polstra
+  2000-2001, 2008, 2011, David E. O'Brien
 License: BSD (2 clause)
 
 Files: include/sys/elf.h

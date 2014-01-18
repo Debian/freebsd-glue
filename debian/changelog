@@ -6,6 +6,7 @@ freebsd-glue (0.2.17) UNRELEASED; urgency=low
     natively, by setting __FREEBSD_GLUE_USE_EMBEDDED_HEADERS macro. This
     makes it possible to detect FTBFS errors that affect other platforms
     also on GNU/kFreeBSD.
+  * Update embedded copy of <sys/elf_common.h>.
 
  -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 22:36:52 +0100
 
