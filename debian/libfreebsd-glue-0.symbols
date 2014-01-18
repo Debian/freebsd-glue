@@ -7,6 +7,7 @@ libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
  (arch=kfreebsd-i386)i386_get_gsbase@Base 0.2.8
  (arch=kfreebsd-i386)i386_set_fsbase@Base 0.2.8
  (arch=kfreebsd-i386)i386_set_gsbase@Base 0.2.8
+ basename_r@Base 0.2.17
  (arch=kfreebsd-any)bsd_sendfile@Base 0.2.6
  cgetcap@Base 0.1.15
  cgetclose@Base 0.1.15

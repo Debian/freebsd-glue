@@ -1,5 +1,6 @@
 LIB=	freebsd-glue
 SRCS=	\
+	basename.c \
 	exec.c \
 	feature_present.c \
 	fstab.c \

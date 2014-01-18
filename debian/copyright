@@ -37,11 +37,9 @@ Copyright: 1999-2002, Robert N. M. Watson
 License: BSD (2 clause)
 
 Files: src/freebsd-glue/random.c
-Copyright: 2013, Robert Millan <rmh@debian.org>
-License: BSD (2 clause)
-
-Files: src/freebsd-glue/sysarch.c
-Copyright: 2014, Robert Millan <rmh@debian.org>
+ src/freebsd-glue/sysarch.c
+ src/freebsd-glue/basename.c
+Copyright: 2013, 2014, Robert Millan <rmh@debian.org>
 License: BSD (2 clause)
 
 Files: include/sys/endian.h
