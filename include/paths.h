@@ -15,6 +15,9 @@
 #ifdef __FreeBSD_kernel__
 #define _PATH_FWMEM		"/dev/fwmem"
 #define	_PATH_UFSSUSPEND	"/dev/ufssuspend"
+#define _PATH_GBDE		"/sbin/gbde"
+#define _PATH_GELI		"/sbin/geli"
+#define _PATH_MDCONFIG		"/sbin/mdconfig"
 #endif
 
 __BEGIN_DECLS
