@@ -1,4 +1,4 @@
-#ifdef __FreeBSD_kernel__
+#if defined(__FreeBSD_kernel__) && !defined(__FREEBSD_GLUE_USE_EMBEDDED_HEADERS)
 /* We have <sys/endian.h>.  Use it.  */
 # include_next <sys/endian.h>
 #else

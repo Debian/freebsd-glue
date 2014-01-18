@@ -30,7 +30,7 @@
  * $FreeBSD$
  */
 
-#ifdef __FreeBSD_kernel__
+#if defined(__FreeBSD_kernel__) && !defined(__FREEBSD_GLUE_USE_EMBEDDED_HEADERS)
 #include_next <sys/queue.h>	/* Supply disabled macros using the Glibc version */
 #include <sys/kern/queue.h>
 #else

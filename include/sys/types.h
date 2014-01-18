@@ -1,6 +1,6 @@
 #include_next <sys/types.h>
 
-# ifdef __FreeBSD_kernel__
+# if defined(__FreeBSD_kernel__) && !defined(__FREEBSD_GLUE_USE_EMBEDDED_HEADERS)
 #  include <sys/kern/types.h>
 # else
 #  ifndef _SYS_TYPES_H_

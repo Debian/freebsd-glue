@@ -2,6 +2,10 @@ freebsd-glue (0.2.17) UNRELEASED; urgency=low
 
   * Remove dependency on libutil-freebsd-dev (it was only needed during
     transition of libutil.h).
+  * Allow users to force use of embedded headers even when building
+    natively, by setting __FREEBSD_GLUE_USE_EMBEDDED_HEADERS macro. This
+    makes it possible to detect FTBFS errors that affect other platforms
+    also on GNU/kFreeBSD.
 
  -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 22:36:52 +0100
 

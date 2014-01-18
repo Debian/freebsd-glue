@@ -37,7 +37,7 @@
 
 #include_next <sys/param.h>
 
-#ifdef __FreeBSD_kernel__
+#if defined(__FreeBSD_kernel__) && !defined(__FREEBSD_GLUE_USE_EMBEDDED_HEADERS)
 
 #include <sys/kern/param.h>
 #if !defined(__FreeBSD_version) && defined(__FreeBSD_kernel_version)
