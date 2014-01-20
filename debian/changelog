@@ -12,6 +12,7 @@ freebsd-glue (0.2.17) UNRELEASED; urgency=low
   * Add _PATH_GBDE, _PATH_GELI and _PATH_MDCONFIG to <paths.h>.
   * Add swapon() and swapoff() prototypes to <unistd.h>.
   * Add basename_r().
+  * Add capsicum(4) family of functions.
 
  -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 22:36:52 +0100
 

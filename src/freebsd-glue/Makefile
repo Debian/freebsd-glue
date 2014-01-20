@@ -18,6 +18,7 @@ SYS!=	dpkg-architecture -qDEB_HOST_GNU_SYSTEM
 
 .if ${SYS} == "kfreebsd-gnu"
 SRCS+=	\
+	capability.c subr_capability.c \
 	cpuset.c \
 	disklabel.c \
 	getbootfile.c \

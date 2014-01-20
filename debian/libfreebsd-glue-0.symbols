@@ -1,4 +1,9 @@
 libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
+ (arch=kfreebsd-any)__cap_rights_clear@Base 0.2.17
+ (arch=kfreebsd-any)__cap_rights_get@Base 0.2.17
+ (arch=kfreebsd-any)__cap_rights_init@Base 0.2.17
+ (arch=kfreebsd-any)__cap_rights_is_set@Base 0.2.17
+ (arch=kfreebsd-any)__cap_rights_set@Base 0.2.17
  (arch=kfreebsd-amd64)amd64_get_fsbase@Base 0.2.8
  (arch=kfreebsd-amd64)amd64_get_gsbase@Base 0.2.8
  (arch=kfreebsd-amd64)amd64_set_fsbase@Base 0.2.8
@@ -9,6 +14,17 @@ libfreebsd-glue.so.0 libfreebsd-glue-0 #MINVER#
  (arch=kfreebsd-i386)i386_set_gsbase@Base 0.2.8
  basename_r@Base 0.2.17
  (arch=kfreebsd-any)bsd_sendfile@Base 0.2.6
+ (arch=kfreebsd-any)cap_enter@Base 0.2.17
+ (arch=kfreebsd-any)cap_fcntls_get@Base 0.2.17
+ (arch=kfreebsd-any)cap_fcntls_limit@Base 0.2.17
+ (arch=kfreebsd-any)cap_getmode@Base 0.2.17
+ (arch=kfreebsd-any)cap_ioctls_get@Base 0.2.17
+ (arch=kfreebsd-any)cap_ioctls_limit@Base 0.2.17
+ (arch=kfreebsd-any)cap_rights_contains@Base 0.2.17
+ (arch=kfreebsd-any)cap_rights_is_valid@Base 0.2.17
+ (arch=kfreebsd-any)cap_rights_limit@Base 0.2.17
+ (arch=kfreebsd-any)cap_rights_merge@Base 0.2.17
+ (arch=kfreebsd-any)cap_rights_remove@Base 0.2.17
  cgetcap@Base 0.1.15
  cgetclose@Base 0.1.15
  cgetent@Base 0.1.15

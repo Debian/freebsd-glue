@@ -39,7 +39,12 @@ License: BSD (2 clause)
 Files: src/freebsd-glue/random.c
  src/freebsd-glue/sysarch.c
  src/freebsd-glue/basename.c
+ src/freebsd-glue/capability.c
 Copyright: 2013, 2014, Robert Millan <rmh@debian.org>
+License: BSD (2 clause)
+
+Files: src/freebsd-glue/subr_capability.c
+Copyright: 2013, FreeBSD Foundation
 License: BSD (2 clause)
 
 Files: include/sys/endian.h
