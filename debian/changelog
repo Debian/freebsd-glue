@@ -1,4 +1,4 @@
-freebsd-glue (0.2.17) UNRELEASED; urgency=low
+freebsd-glue (0.2.17) unstable; urgency=low
 
   * Remove dependency on libutil-freebsd-dev (it was only needed during
     transition of libutil.h).
@@ -14,7 +14,7 @@ freebsd-glue (0.2.17) UNRELEASED; urgency=low
   * Add basename_r().
   * Add capsicum(4) family of functions.
 
- -- Robert Millan <rmh@debian.org>  Wed, 08 Jan 2014 22:36:52 +0100
+ -- Robert Millan <rmh@debian.org>  Mon, 20 Jan 2014 23:45:07 +0100
 
 freebsd-glue (0.2.16) unstable; urgency=low
 
