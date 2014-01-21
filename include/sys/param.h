@@ -52,14 +52,18 @@
 #undef __FreeBSD_version
 #define __FreeBSD_version	1000010
 
-/* For SIG* */
-#include <signal.h>
+#include <signal.h>	/* For SIG* */
+#include <limits.h>	/* for PATH_MAX */
 
 #include <sys/types.h>
 
 #  ifndef roundup2
 #   define		roundup2(x, y)  (((x)+((y)-1))&(~((y)-1))) /* if y is powers of two */
 #  endif
+
+#ifndef MAXPATHLEN
+#define MAXPATHLEN PATH_MAX
+#endif
 
 #endif
 
