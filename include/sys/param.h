@@ -65,6 +65,10 @@
 #define MAXPATHLEN PATH_MAX
 #endif
 
+#ifndef MAXHOSTNAMELEN
+#define MAXHOSTNAMELEN 256
 #endif
+
+#endif /* _SYS_PARAM_H_ */
 
 #endif
