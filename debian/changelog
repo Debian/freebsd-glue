@@ -1,6 +1,7 @@
 freebsd-glue (0.2.19) UNRELEASED; urgency=low
 
   * Add MAXHOSTNAMELEN fallback.
+  * Add isnumber().
 
  -- Robert Millan <rmh@debian.org>  Sun, 26 Jan 2014 14:10:10 +0100
 
