@@ -1,10 +1,13 @@
-freebsd-glue (0.2.20) UNRELEASED; urgency=low
+freebsd-glue (0.2.20) unstable; urgency=low
 
+  * Upload to unstable
+  
+  [ Steven Chamberlain ]
   * Switch to gcc-4.9 (Closes: #751309)
   * Remove funopen, fwopen and fropen definitions, now provided by libbsd
     (Closes: #759249)
 
- -- GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>  Mon, 25 Aug 2014 20:40:41 +0100
+ -- Christoph Egger <christoph@debian.org>  Mon, 25 Aug 2014 13:17:44 -0700
 
 freebsd-glue (0.2.19) unstable; urgency=low
 
