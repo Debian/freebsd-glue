@@ -18,7 +18,7 @@ PMAKE := \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
 	bmake -m /usr/share/mk-freebsd \
-	CC=gcc-4.8 \
+	CC=gcc-4.9 \
 	$(NULL)
 PMAKE_UDEB := \
 	MAKEFLAGS=$(BSD_MAKEFLAGS) \
@@ -26,7 +26,7 @@ PMAKE_UDEB := \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
 	bmake -m /usr/share/mk-freebsd \
-	CC=gcc-4.8 \
+	CC=gcc-4.9 \
 	RESCUE=yes \
 	$(NULL)
 

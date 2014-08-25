@@ -12,7 +12,7 @@ Build-Depends:
  libdb-dev,
  zlib1g-dev,
 # For -Wno-error=maybe-uninitialized
- gcc-4.8,
+ gcc-4.9,
 Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
 Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.3
@@ -23,7 +23,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  libfreebsd-glue-0 (= ${binary:Version}),
  original-awk,
  make,
- libbsd-dev (>= 0.4.0-1~),
+ libbsd-dev (>= 0.7.0-1~),
  libdb-dev,
  zlib1g-dev,
  libexpat-dev,

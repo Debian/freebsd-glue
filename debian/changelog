@@ -1,3 +1,11 @@
+freebsd-glue (0.2.20) UNRELEASED; urgency=low
+
+  * Switch to gcc-4.9 (Closes: #751309)
+  * Remove funopen, fwopen and fropen definitions, now provided by libbsd
+    (Closes: #759249)
+
+ -- GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>  Mon, 25 Aug 2014 20:40:41 +0100
+
 freebsd-glue (0.2.19) unstable; urgency=low
 
   * Add MAXHOSTNAMELEN fallback.

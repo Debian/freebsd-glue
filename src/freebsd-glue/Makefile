@@ -4,7 +4,6 @@ SRCS=	\
 	exec.c \
 	feature_present.c \
 	fstab.c \
-	funopen.c \
 	getbsize.c \
 	getcap.c \
 	getosreldate.c \
