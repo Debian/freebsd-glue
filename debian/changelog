@@ -1,4 +1,4 @@
-freebsd-glue (0.2.21) UNRELEASED; urgency=medium
+freebsd-glue (0.2.21) unstable; urgency=medium
 
   * Add myself to Uploaders.
   * No longer Build-Depends specifically on gcc-4.9 (gcc-5 and gcc-6
