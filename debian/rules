@@ -31,15 +31,23 @@ PMAKE_UDEB := \
 DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
 
+DEB_BUILD_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+NATIVE_CC		?= $(DEB_BUILD_GNU_TYPE)-gcc
+
 clean:
 	dh_testdir
 	rm -rf obj-{deb,udeb} debian/tmp-udeb
-	rm -f include/machine/__get_elf_arch.h src/get_elf_arch
+	rm -f include/machine/__get_elf_arch.h src/get_elf_arch src/host_elf_arch
 	dh_clean
 
-src/get_elf_arch: src/get_elf_arch.c
-include/machine/__get_elf_arch.h: src/get_elf_arch
-	$^ > $@
+# Build this for the build architecture, as it is executed during build
+# to examine host_elf_arch
+src/get_elf_arch:
+	$(NATIVE_CC) src/get_elf_arch.c -o src/get_elf_arch
+# Build this for the host architecture.
+src/host_elf_arch: src/host_elf_arch.c
+include/machine/__get_elf_arch.h: src/get_elf_arch src/host_elf_arch
+	$^ src/host_elf_arch > $@
 
 build: build-arch
 build-arch: build-deb build-udeb

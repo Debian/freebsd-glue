@@ -6,6 +6,9 @@ freebsd-glue (0.2.21) UNRELEASED; urgency=medium
   * Fixes for cross building:
     - don't override $CC (as explained by Helmut Grohne, it forced use
       of the build architecture compiler).
+    - build get_elf_arch with the build architecture compiler, but
+      examine a host arch binary (also suggested by Helmut Grohne,
+      thanks!)
 
  -- Steven Chamberlain <steven@pyro.eu.org>  Wed, 02 Mar 2016 14:06:22 +0000
 
