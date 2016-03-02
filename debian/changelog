@@ -3,6 +3,9 @@ freebsd-glue (0.2.21) UNRELEASED; urgency=medium
   * Add myself to Uploaders.
   * No longer Build-Depends specifically on gcc-4.9 (gcc-5 and gcc-6
     are both fine).
+  * Fixes for cross building:
+    - don't override $CC (as explained by Helmut Grohne, it forced use
+      of the build architecture compiler).
 
  -- Steven Chamberlain <steven@pyro.eu.org>  Wed, 02 Mar 2016 14:06:22 +0000
 
