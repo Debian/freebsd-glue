@@ -1,3 +1,10 @@
+freebsd-glue (0.2.22) UNRELEASED; urgency=medium
+
+  * Actually use the proper build architecture compiler
+    (thanks, Helmut Grohne!)
+
+ -- Steven Chamberlain <steven@pyro.eu.org>  Sat, 05 Mar 2016 00:48:23 +0000
+
 freebsd-glue (0.2.21) unstable; urgency=medium
 
   * Add myself to Uploaders.
