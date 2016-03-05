@@ -1,6 +1,18 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+# Determine host architecture compiler
+DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+ifeq ($(origin CC),default)
+CC := $(DEB_HOST_GNU_TYPE)-gcc
+endif
+
+# Determine build architecture compiler
+DEB_BUILD_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+NATIVE_CC		?= $(DEB_BUILD_GNU_TYPE)-gcc
+
 export SHELL = bash
 
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
@@ -18,6 +30,7 @@ PMAKE := \
 	CFLAGS="$(CFLAGS) -O2" \
 	DESTDIR="$(DESTDIR)" \
 	bmake -m /usr/share/mk-freebsd \
+	CC=$(CC) \
 	$(NULL)
 PMAKE_UDEB := \
 	MAKEFLAGS=$(BSD_MAKEFLAGS) \
@@ -25,20 +38,9 @@ PMAKE_UDEB := \
 	CFLAGS="$(CFLAGS) -Os" \
 	DESTDIR="$(DESTDIR)-udeb" \
 	bmake -m /usr/share/mk-freebsd \
+	CC=$(CC) \
 	RESCUE=yes \
 	$(NULL)
-
-DEB_HOST_ARCH_OS	?= $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
-
-# Determine host architecture compiler
-DEB_HOST_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-ifeq ($(origin CC),default)
-CC := $(DEB_HOST_GNU_TYPE)-gcc
-endif
-
-# Determine build architecture compiler
-DEB_BUILD_GNU_TYPE	?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-NATIVE_CC		?= $(DEB_BUILD_GNU_TYPE)-gcc
 
 clean:
 	dh_testdir
