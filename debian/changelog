@@ -2,6 +2,7 @@ freebsd-glue (0.2.22) UNRELEASED; urgency=medium
 
   * Actually use the proper build architecture compiler
     (thanks, Helmut Grohne!)
+  * Drop freebsd-glue's seemingly unnecessary dependency on 'make'
 
  -- Steven Chamberlain <steven@pyro.eu.org>  Sat, 05 Mar 2016 00:48:23 +0000
 

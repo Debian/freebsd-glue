@@ -22,7 +22,6 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libfreebsd-glue-0 (= ${binary:Version}),
  original-awk,
- make,
  libbsd-dev (>= 0.7.0-1~),
  libdb-dev,
  zlib1g-dev,
