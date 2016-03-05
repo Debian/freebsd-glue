@@ -1,4 +1,4 @@
-freebsd-glue (0.2.22) UNRELEASED; urgency=medium
+freebsd-glue (0.2.22) unstable; urgency=medium
 
   * Actually use the proper build architecture compiler
     (thanks, Helmut Grohne!)
