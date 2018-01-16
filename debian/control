@@ -13,9 +13,9 @@ Build-Depends:
  libbsd-dev,
  libdb-dev,
  zlib1g-dev,
-Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/freebsd-glue/
-Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/freebsd-glue/
 Standards-Version: 3.9.7
+Vcs-Browser: https://salsa.debian.org/kfreebsd-team/freebsd-glue
+Vcs-Git: https://salsa.debian.org/kfreebsd-team/freebsd-glue.git
 
 Package: freebsd-glue
 Architecture: any
